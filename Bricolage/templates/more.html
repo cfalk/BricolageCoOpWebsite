@@ -1,0 +1,40 @@
+<html>
+
+  <title>Bricolage | About</title>
+
+  <head>
+
+    {% include "style.html" %}
+    {% include "scripts.html" %}
+
+  </head>
+
+
+  <body>
+
+    {% include "top_header.html" %}
+
+    <!-- "Interested" Button to Collect Emails -->
+    <a href="https://docs.google.com/document/d/1oRLB-8LR282ShBpXgSyYg0YI-w5HU7toBfl81IpkS3o/edit?usp=sharing">
+      <div class='button-center'>
+        <img class='image-link'
+             src="{{STATIC_URL}}images/link.png"/>
+        co-op compendium
+      </div>
+    </a>
+
+    <div class='panel-quote'>
+      more to come...
+    </div>
+
+
+    {% include "copyright.html" %}
+
+
+  </body>
+
+  <script>
+    var STATIC_URL = "{{STATIC_URL}}";
+  </script>
+
+</html>

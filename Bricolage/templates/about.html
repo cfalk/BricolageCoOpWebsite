@@ -1,0 +1,48 @@
+<html>
+
+  <title>Bricolage | About</title>
+
+  <head>
+
+    {% include "style.html" %}
+    {% include "scripts.html" %}
+
+  </head>
+
+
+  <body>
+
+    {% include "top_header.html" %}
+
+
+    <a href="https://docs.google.com/document/d/1Zhs-hYDm6gHlJHq_Dw5PqCyBhoOZElXj-dz-fBSYL_g/edit?usp=sharing">
+      <div class='button-center'>
+        <img class='image-link'
+             src="{{STATIC_URL}}images/link.png"/>
+        bylaws
+      </div>
+    </a>
+
+    <a href="{% url 'faq' %}">
+      <div class='button-center'>
+        <img class='image-link'
+             src="{{STATIC_URL}}images/link.png"/>
+        faq
+      </div>
+    </a>
+
+    <div class='panel-info'>
+    The <span class='bold-4'>Bricolage Co-op</span> is an autonomous student run space meant to foster creativity, direct involvement, and a <span class='bold-1'>do-it-ourselves</span> spirit. It aims to help Haverford students, faculty and staff to sell and/or <span class='bold-2'>trade</span> their own <span class='bold-4'>art</span>, clothes, furniture, knick knacks, and other skills, enacting values often left ideological or abstract and in the classroom. By focusing on offering avenues for fruitful <span class='bold-3'>production</span> and <span class='bold-1'>skill-sharing</span> as well as non-conventional forms of exchange and payment, this cooperative hopes to model the potential for <span class='bold-2'>alternative economies</span>. Through this process, the cooperative hopes to foster an alternative community within Haverford, <span class='bold-4'>connected</span> by relationships both social, moral, and economic, and in line with principles the college already upholds, such as mutual accountability and an honor system. Furthermore, the cooperative’s <span class='bold-3'>community</span> driven operation/organization/function allows it to serve as a model for a political process currently lacking on campus offering the possibility for <span class='bold-1'>direct engagement/involvement</span> in democratic elections. Though the individuals and context may change, and the space and programs are subject to constant alterations and development, the mission remains the same: to fill an ethical and social need for autonomy, exploration, and <span class='bold-2'>empowerment</span>.
+    </div>
+
+
+    {% include "copyright.html" %}
+
+
+  </body>
+
+  <script>
+    var STATIC_URL = "{{STATIC_URL}}";
+  </script>
+
+</html>

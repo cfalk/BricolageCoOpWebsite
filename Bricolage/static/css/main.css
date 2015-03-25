@@ -24,10 +24,13 @@ a, a:visited {
 }
 
 #copyright {
- bottom:0px;
- right:0px;
- position:absolute;
- margin:1em;
+  box-sizing:border-box;
+  width:100%;
+  bottom:0px;
+  padding:1em;
+
+  color:#b799dc;
+  text-align:right;
 }
 
 
@@ -42,13 +45,11 @@ a, a:visited {
 
 
 .button-center {
+  position:relative;
   text-align:center;
-}
-
-.button-center {
   box-sizing:border-box;
   margin:0.5em auto;
-  padding:1em;
+  padding:0.5em;
 
   font-size:2em;
   font-weight:bold;
@@ -57,7 +58,7 @@ a, a:visited {
   color:white;
 }
 .button-center:hover {
-  background-color:#b4ea9f;
+  opacity:0.85;
 }
 
 
@@ -73,27 +74,57 @@ a, a:visited {
   text-align:center;
 }
 
+.panel-info {
+  font-size:1.1em;
+  line-height:1.5em;
+
+}
+
 
 .galleria {
   width:100%;
-  height:50%;
+  height:65%;
 }
 .galleria-container {
-  background-color:white;
+  background-color:inherit;
 }
+.galleria-images {
+  background-color:#e9f9e4;
+}
+.galleria-thumbnails-list .galleria-image {
+  border:none !important; /* Override the "classic" theme's borders. */
+}
+
+.image-link {
+  max-height:1em;
+  vertical-align:middle;
+  opacity:0.5;
+}
+
 
 
 .highlight-1 { /* Blue */
   color:#548fcb;
   background-color:#DCE8F4;
 }
-.highlight-1:hover {
-  background-color:#EDF3F9;
-}
+.highlight-1:hover { background-color:#EDF3F9; }
+
 .highlight-2 { /* Tan */
   color:#e5bc88;
   background-color:#F7EADB;
 }
-.highlight-2:hover {
-  background-color:#f9f1e7;
+.highlight-2:hover { background-color:#f9f1e7; }
+
+.highlight-3 { /* Tan */
+  color:#a2e588;
+  background-color:#dcf5d3;
+  font-weight:bold;
 }
+.highlight-3:hover { background-color:#e4f7dd; }
+
+
+.bold-1, .bold-2, .bold-3, .bold-4 { font-weight:bold; }
+.bold-1 { color:#786591; }
+.bold-2 { color:#a68863; }
+.bold-3 { color:#758a9f; }
+.bold-4 { color:#658e55; }
