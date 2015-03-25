@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+  .button-menu {
+    display:block;
+  }
+
+  #copyright {
+    display:block;
+    text-align:center;
+    position:relative;
+  }
+}

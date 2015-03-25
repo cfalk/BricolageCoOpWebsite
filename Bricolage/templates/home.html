@@ -1,0 +1,55 @@
+<html>
+
+  <title>Bricolage</title>
+
+  <head>
+
+    {% include "style.html" %}
+    {% include "scripts.html" %}
+
+  </head>
+
+
+  <body>
+
+    {% include "top_header.html" %}
+
+    <div class='panel-quote panel-info'>
+      Fostering creativity and direct involvement in a do-it-ourselves spirit.
+    </div>
+
+    <!-- A sample image "galleria" -->
+    <div class="galleria">
+      <img src="http://imgur.com/Tz84c8o.jpg"/>
+      <img src="http://imgur.com/LaefRcg.jpg"/>
+      <img src="http://imgur.com/bvmXqL3.jpg"/>
+      <img src="http://imgur.com/fylwf5j.jpg"/>
+    </div>
+
+
+    <div class='panel-quote panel-info'>
+      Want to learn more?
+    </div>
+
+    <!-- "Interested" Button to Collect Emails -->
+    <a href="http://goo.gl/forms/7tFVw3zdgv">
+      <div class='button-center'>
+        Sign up!
+      </div>
+    </a>
+
+
+
+
+    {% include "copyright.html" %}
+
+
+  </body>
+
+  <script>
+    var STATIC_URL = "{{STATIC_URL}}";
+  </script>
+
+  <script src="{{STATIC_URL}}js/main.js"></script>
+
+</html>
