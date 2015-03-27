@@ -76,8 +76,14 @@ a, a:visited {
 
 .panel-info {
   font-size:1.1em;
-  line-height:1.5em;
+  line-height:1.8em;
+  text-align:justify;
+}
 
+.panel-big {
+  font-size:1.6em;
+  line-height:2em;
+  text-align:center;
 }
 
 

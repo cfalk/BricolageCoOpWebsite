@@ -14,12 +14,34 @@
 
     {% include "top_header.html" %}
 
+    <div class='panel-big'>
+      Want to share what you <span class="bold-1">make?</span>
+    </div>
+    <div class='panel-big'>
+      Want to learn <span class="bold-2">new skills?</span>
+    </div>
+    <div class='panel-big'>
+      Want to build a <span class="bold-3">community?</span>
+    </div>
+
+    <div class='panel-quote'>
+      <b>The Bricolage Cooperative is coming to Haverford this Fall!</b>
+    </div>
+    <div class='panel-info'>
+      We'll be setting up shop in the Meditation Room of James House while
+      working to foster a democratic community of builders, artists, designers,
+      makers, doers, and everyone in between. To help this project flourish,
+      we'd love to hear your ideas (general or specific) about how a co-operative
+      could benefit our community. And better yet, sign up below to show interest
+      and to hear about future Bric-related news, events, and updates!
+    </div>
+
     <!-- "Interested" Button to Collect Emails -->
     <a href="http://goo.gl/forms/7tFVw3zdgv">
       <div class='button-center'>
         <img class='image-link'
              src="{{STATIC_URL}}images/link.png"/>
-        sign up for info!
+        sign up for more!
       </div>
     </a>
 
@@ -32,15 +54,7 @@
       </div>
     </a>
 
-    <!-- A sample image "galleria" -->
-    <div class="galleria">
-      <img src="http://imgur.com/Tz84c8o.jpg"/>
-      <img src="http://imgur.com/wy6H38E.jpg"/>
-      <img src="http://imgur.com/LaefRcg.jpg"/>
-      <img src="http://imgur.com/bvmXqL3.jpg"/>
-      <img src="http://imgur.com/fylwf5j.jpg"/>
-    </div>
-
+    {% include "galleria.html" %}
 
     {% include "copyright.html" %}
 
